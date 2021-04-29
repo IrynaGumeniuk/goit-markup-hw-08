@@ -1,0 +1,23 @@
+.web {
+  color: $accent-color;
+}
+
+.nav__logo {
+  color: $logo-color;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer__logo {
+  color: $special-text-color;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
