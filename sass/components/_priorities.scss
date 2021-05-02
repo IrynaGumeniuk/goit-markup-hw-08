@@ -1,17 +1,20 @@
 .section {
-  padding: 94px 0 94px 0;
+  // padding: 94px 0 94px 0;
+  @media screen and (max-width: 768px) {
+    padding: 60px 0 60px 0;
+  }
 }
 
-.priorities {
-  display: flex;
-}
+// .priorities {
+//   display: flex;
+// }
 
 .priorities__item {
-  width: 270px;
+  // width: 270px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 .priorities__title {
@@ -21,6 +24,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 780px) {
+    text-align: center;
+  }
 }
 
 .priorities__text {
@@ -31,11 +38,17 @@
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 780px) {
+  .priorities__text:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .priorities__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -45,17 +58,29 @@
 .priorities__icon-antenna {
   width: 65.32px;
   height: 70px;
+
+  @media screen and (max-width: 768px) {
+    margin: 25px 192.34px;
+  }
 }
 
 .priorities__icon-clock {
-  display: block;
+  // display: block;
   width: 66.96px;
   height: 70px;
+
+  @media screen and (max-width: 768px) {
+    margin: 25px 192.34px;
+  }
 }
 
 .priorities__icon-diagram,
 .priorities__icon-astronaut {
-  display: block;
+  // display: block;
   width: 70px;
   height: 70px;
+
+  @media screen and (max-width: 768px) {
+    margin: 25px 192.34px;
+  }
 }

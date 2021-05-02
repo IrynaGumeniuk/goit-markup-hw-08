@@ -1,13 +1,7 @@
 .page-header {
   border-bottom: 1px solid #ececec;
-  min-height: 80px;
+  // min-height: 80px;
   background: #ffffff;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .nav .nav__link,
@@ -19,40 +13,40 @@
   letter-spacing: 0.02em;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  .nav__list {
-    display: flex;
-    margin-left: 93px;
-  }
-}
+// .nav {
+//   display: flex;
+//   align-items: center;
+//   .nav__list {
+//     display: flex;
+//     margin-left: 93px;
+//   }
+// }
 
-.nav__list .nav__item:not(:last-child) {
-  margin-right: 50px;
-}
+// .nav__list .nav__item:not(:last-child) {
+//   margin-right: 50px;
+// }
 
-.auth-nav {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-}
+// .auth-nav {
+//   display: flex;
+//   margin-left: auto;
+//   align-items: center;
+// }
 
-.auth-nav .auth-nav__item + .auth-nav__item {
-  margin-left: 50px;
-}
+// .auth-nav .auth-nav__item + .auth-nav__item {
+//   margin-left: 50px;
+// }
 
 .auth-nav .nav__link {
   color: $secondary-text-color;
 }
 
-.header-flex {
-  display: flex;
-}
+// .header-flex {
+//   display: flex;
+// }
 
-.auth-nav__contacts-icon {
-  margin-right: 10px;
-}
+// .auth-nav__contacts-icon {
+//   margin-right: 10px;
+// }
 
 .auth-nav__icon-envelope {
   width: 16px;
@@ -62,4 +56,11 @@
 .auth-nav__icon-smartphone {
   width: 10px;
   height: 16px;
+}
+
+@media (max-width: 768px) {
+  .nav__link,
+  .auth-nav {
+    display: none;
+  }
 }
