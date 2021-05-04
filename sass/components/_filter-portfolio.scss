@@ -6,16 +6,25 @@
 /* Filter Portfolio */
 
 .filter {
-  // margin-bottom: 50px;
-  // display: flex;
-  // justify-content: center;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 767.98px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
-// .filter__items:not(:last-child) {
-//   margin-right: 8px;
-// }
+.filter__items:not(:last-child) {
+  margin-right: 8px;
 
-.filter__items .btn {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 21px;
+  }
+}
+
+.btn {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -28,6 +37,24 @@
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn__primary {
+  @media screen and (min-width: 480px) {
+    padding: 6px 22px 6px 22px;
+  }
+}
+
+.btn__primary--active {
+  color: $special-text-color;
+  background-color: $accent-color;
+  font-weight: 500;
+  line-height: 1.62;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @media screen and (min-width: 480px) {
+    padding: 6px 22px 6px 22px;
+  }
 }
 
 .filter__items .btn:hover,

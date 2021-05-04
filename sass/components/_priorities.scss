@@ -1,20 +1,36 @@
 .section {
-  // padding: 94px 0 94px 0;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199.98px) {
     padding: 60px 0 60px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0 94px 0;
   }
 }
 
-// .priorities {
-//   display: flex;
-// }
+.priorities {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
 
 .priorities__item {
-  // width: 270px;
+  @media screen and (min-width: 768px) {
+    width: calc((100%-60px) / 2);
+    width: 354px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
 
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .priorities__title {
@@ -25,7 +41,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 767.98px) {
     text-align: center;
   }
 }
@@ -36,51 +52,67 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
 
-@media screen and (max-width: 780px) {
-  .priorities__text:not(:last-child) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 30px;
   }
 }
 
+.priorities__text.last {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: -30px;
+  }
+}
+
 .priorities__icon {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-}
 
-.priorities__icon-antenna {
-  width: 65.32px;
-  height: 70px;
-
-  @media screen and (max-width: 768px) {
-    margin: 25px 192.34px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-}
 
-.priorities__icon-clock {
-  // display: block;
-  width: 66.96px;
-  height: 70px;
-
-  @media screen and (max-width: 768px) {
-    margin: 25px 192.34px;
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   }
-}
 
-.priorities__icon-diagram,
-.priorities__icon-astronaut {
-  // display: block;
-  width: 70px;
-  height: 70px;
+  .priorities__icon-antenna {
+    width: 65.32px;
+    height: 70px;
 
-  @media screen and (max-width: 768px) {
-    margin: 25px 192.34px;
+    @media screen and (max-width: 767.98px) {
+      margin: 25px 192.34px;
+    }
+  }
+
+  .priorities__icon-clock {
+    width: 66.96px;
+    height: 70px;
+
+    @media screen and (max-width: 767.98px) {
+      margin: 25px 192.34px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+
+  .priorities__icon-diagram,
+  .priorities__icon-astronaut {
+    width: 70px;
+    height: 70px;
+
+    @media screen and (max-width: 767.98px) {
+      margin: 25px 192.34px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
   }
 }

@@ -1,5 +1,7 @@
 .activity {
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .activity__item:not(:last-child) {
@@ -23,7 +25,15 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.section.no-padding {
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
 }
