@@ -215,6 +215,10 @@
     top: 78.2%;
     left: 45px;
   }
+
+  @media screen and (min-width: 1200px) {
+    top: 77%;
+  }
 }
 
 .modal__check-input {

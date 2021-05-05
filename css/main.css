@@ -613,6 +613,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .team-list {
+    display: flex;
     margin-top: 50px;
   }
 }
@@ -622,7 +623,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .team-list__item {
     width: calc((100%-60px) / 2);
     width: 354px;
@@ -632,22 +633,36 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    width: 270px;
+    height: 428px;
+  }
+}
+
 @media screen and (max-width: 767.98px) {
   .team-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 767.98px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .team-list__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .team__photo {
     height: 374px;
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__photo {
+    height: 260px;
+    width: 270px;
   }
 }
 
@@ -1336,6 +1351,12 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .modal__check-icon {
+    top: 77%;
+  }
+}
+
 .modal__check-input {
   position: absolute;
   width: 1px;
@@ -1411,6 +1432,14 @@ footer {
 @media screen and (min-width: 480px) {
   .btn__primary--active {
     padding: 6px 22px 6px 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn__primary--active {
+    color: #212121;
+    background-color: #f5f4fa;
+    box-shadow: none;
   }
 }
 
@@ -1493,6 +1522,13 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .portfolio__photo {
     width: 354px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__photo {
+    width: 370px;
     height: 294px;
   }
 }

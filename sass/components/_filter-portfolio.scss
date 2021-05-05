@@ -55,6 +55,12 @@
   @media screen and (min-width: 480px) {
     padding: 6px 22px 6px 22px;
   }
+
+  @media screen and (min-width: 1200px) {
+    color: $primary-text-color;
+    background-color: #f5f4fa;
+    box-shadow: none;
+  }
 }
 
 .filter__items .btn:hover,
