@@ -9,6 +9,12 @@
     color: $accent-color;
     fill: $accent-color;
   }
+
+  &:hover .auth-nav__contacts-icon,
+  &:focus .auth-nav__contacts-icon {
+    color: $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .contact-us__link {
